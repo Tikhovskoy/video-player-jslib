@@ -4,6 +4,12 @@
     width: 800px;
 }
 
+/* Тень для всего блока плеера */
+#player {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+    border-radius: 4px;
+}
+
 /* Размеры видео */
 .fixed-video-size {
     width: 800px;
