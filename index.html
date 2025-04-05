@@ -8,14 +8,23 @@
 </head>
 
 <body>
-    <div class="player" id="player">
-        <div class="js-video-container" style="width: 800px; height: 450px;"></div>
-    </div>
 
-    <!-- Кнопка с иконкой Play -->
-    <button class="js-play-button" style="border: none; background: transparent; cursor: pointer;">
-        <i class="fa fa-play"></i>
-    </button>
+    <!-- ОБЩИЙ контейнер с фиксированной шириной -->
+    <div style="width: 800px; margin: 0 auto;">
+
+        <!-- Видеоплеер -->
+        <div class="player" id="player">
+            <div class="js-video-container" style="width: 800px; height: 450px;"></div>
+        </div>
+
+        <!-- Чёрная панель с кнопкой внутри -->
+        <div style="background: black; padding: 10px;">
+            <button class="js-play-button" style="border: none; background: transparent; cursor: pointer;">
+                <i class="fa fa-play" style="color: white;"></i>
+            </button>
+        </div>
+
+    </div>
 
     <!-- Скрипты -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
