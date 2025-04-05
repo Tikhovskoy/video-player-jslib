@@ -4,57 +4,40 @@
 <head>
     <meta charset="UTF-8" />
     <title>ГОСТФильм — Видеоплеер</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body>
 
-    <!-- ОБЩИЙ контейнер с фиксированной шириной -->
-    <div style="width: 800px; margin: 0 auto;">
+    <div class="player player-centered" id="player">
+        <!-- Контейнер с видео -->
+        <div class="js-video-container video-container fixed-video-size"></div>
 
-        <!-- Видеоплеер и управление -->
-        <div class="player" id="player" style="position: relative;">
-            <div class="js-video-container" style="width: 800px; height: 450px;"></div>
-
-            <!-- Панель с кнопками управления -->
-            <div style="background: rgb(0, 0, 0); padding: 10px; display: flex; gap: 10px;">
-                <!-- Play -->
-                <button class="js-play-button"
-                    style="width: 36px; height: 36px; border: none; background: transparent; cursor: pointer;">
-                    <i class="fa fa-play" style="color: white; font-size: 18px;"></i>
+        <!-- Панель кнопок -->
+        <div class="player-buttons buttons-row">
+            <!-- Слева -->
+            <div class="controls-left">
+                <button class="js-play-button player-btn">
+                    <i class="fa fa-play"></i>
                 </button>
-
-                <!-- Pause -->
-                <button class="js-pause-button"
-                    style="width: 36px; height: 36px; border: none; background: transparent; cursor: pointer;">
-                    <i class="fa fa-pause" style="color: white; font-size: 18px;"></i>
-                </button>
-
-                <!-- Volume ON -->
-                <button class="js-volume-button"
-                    style="width: 36px; height: 36px; border: none; background: transparent; cursor: pointer;">
-                    <i class="fa fa-volume-up" style="color: white; font-size: 18px;"></i>
-                </button>
-
-                <!-- Mute -->
-                <button class="js-mute-button"
-                    style="width: 36px; height: 36px; border: none; background: transparent; cursor: pointer;">
-                    <i class="fa fa-volume-off" style="color: white; font-size: 18px;"></i>
+                <button class="js-pause-button player-btn">
+                    <i class="fa fa-pause"></i>
                 </button>
             </div>
 
-            <!-- Кнопка fullscreen в правом нижнем углу -->
-            <button class="js-fullscreen-button" style="
-                    position: absolute;
-                    bottom: 10px;
-                    right: 10px;
-                    width: 36px;
-                    height: 36px;
-                    border: none;
-                    background: transparent;
-                    cursor: pointer;">
-                <i class="fa fa-expand" style="color: white; font-size: 18px;"></i>
-            </button>
+            <!-- Справа -->
+            <div class="controls-right">
+                <button class="js-volume-button player-btn">
+                    <i class="fa fa-volume-up"></i>
+                </button>
+                <button class="js-mute-button player-btn">
+                    <i class="fa fa-volume-off"></i>
+                </button>
+                <button class="js-fullscreen-button player-btn">
+                    <i class="fa fa-expand"></i>
+                </button>
+            </div>
         </div>
     </div>
 
