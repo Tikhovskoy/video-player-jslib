@@ -1,0 +1,32 @@
+# Виртуальное окружение
+venv/
+ENV/
+.env/
+*.env
+
+# Кеш Python
+__pycache__/
+*.pyc
+
+# Файлы livereload
+.livereload*
+
+# Медиа
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Временные/резервные файлы редактора
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# Кэш VS Code
+.vscode/

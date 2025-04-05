@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>ГОСТФильм — Видеоплеер</title>
+</head>
+
+<body>
+    <div class="player" id="player">
+        <div class="js-video-container" style="width: 800px; height: 450px;"></div>
+    </div>
+
+    <!-- Кнопка Play под плеером -->
+    <button>Play!</button>
+
+    <!-- Скрипты -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
+    <script src="player.js"></script>
+
+    <script>
+        function waitForPlayableAndStart() {
+            if (typeof window.Playable === 'undefined') {
+                setTimeout(waitForPlayableAndStart, 100);
+                return;
+            }
+
+            const player = createPlayer({
+                elementId: 'player',
+                src: 'movie.mp4'
+            });
+
+            player.setVolume(100);
+        }
+
+        waitForPlayableAndStart();
+    </script>
+</body>
+
+</html>
