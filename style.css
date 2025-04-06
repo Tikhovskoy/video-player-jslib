@@ -1,16 +1,13 @@
-/* Видео */
 .video-container {
     height: 450px;
     background-color: black;
 }
 
-/* Центровка и размеры контейнера */
 .player-centered {
     margin: 0 auto;
     width: 800px;
 }
 
-/* Flex-контейнер с тенью */
 .player {
     display: flex;
     flex-direction: column;
@@ -19,7 +16,6 @@
     overflow: hidden;
 }
 
-/* Панель с кнопками */
 .player-buttons {
     background-color: black;
     padding: 10px;
@@ -27,7 +23,6 @@
     box-sizing: border-box;
 }
 
-/* Выравнивание кнопок */
 .buttons-row {
     display: flex;
     justify-content: space-between;
@@ -37,18 +32,19 @@
 .controls-left,
 .controls-right {
     display: flex;
-    gap: 10px;
+    gap: 16px;
 }
 
-/* Кнопки */
 .player-btn {
-    width: 36px;
-    height: 36px;
+    width: 42px;
+    height: 42px;
+    padding: 6px;
     border: none;
     background: transparent;
     color: white;
     font-size: 18px;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 .player-btn i {
@@ -56,7 +52,6 @@
     font-size: 18px;
 }
 
-/* Обнуление отступов у body и html */
 html,
 body {
     height: 100%;
