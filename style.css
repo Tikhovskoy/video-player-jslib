@@ -57,3 +57,34 @@ body {
     height: 100%;
     margin: 0;
 }
+
+.controls-center {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 16px;
+}
+
+.time-label {
+    color: white;
+    font-family: monospace;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.progress-bar {
+    flex-grow: 1;
+    height: 6px;
+    background-color: #444;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+}
+
+.js-progress-slider {
+    background-color: #f00;
+    height: 100%;
+    width: 0%;
+    border-radius: 3px;
+}
