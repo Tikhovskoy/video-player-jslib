@@ -1,31 +1,33 @@
-/* Центровка и ширина плеера */
+/* Видео */
+.video-container {
+    height: 450px;
+    background-color: black;
+}
+
+/* Центровка и размеры контейнера */
 .player-centered {
     margin: 0 auto;
     width: 800px;
 }
 
-/* Тень для всего блока плеера */
-#player {
+/* Flex-контейнер с тенью */
+.player {
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
     border-radius: 4px;
     overflow: hidden;
-}
-
-/* Размеры видео */
-.fixed-video-size {
-    width: 800px;
-    height: 450px;
 }
 
 /* Панель с кнопками */
 .player-buttons {
     background-color: black;
     padding: 10px;
+    height: 70px;
+    box-sizing: border-box;
 }
 
-/* Выравнивание кнопок по сторонам */
+/* Выравнивание кнопок */
 .buttons-row {
     display: flex;
     justify-content: space-between;
@@ -38,7 +40,7 @@
     gap: 10px;
 }
 
-/* Кнопки управления */
+/* Кнопки */
 .player-btn {
     width: 36px;
     height: 36px;
@@ -49,8 +51,14 @@
     cursor: pointer;
 }
 
-/* Иконки внутри кнопок */
 .player-btn i {
     color: white;
     font-size: 18px;
+}
+
+/* Обнуление отступов у body и html */
+html,
+body {
+    height: 100%;
+    margin: 0;
 }
