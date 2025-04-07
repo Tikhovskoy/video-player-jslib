@@ -30,3 +30,6 @@ Thumbs.db
 
 # Кэш VS Code
 .vscode/
+
+Makefile
+server.py
