@@ -72,3 +72,9 @@ python3 -m http.server 8000
 - [Playable](https://github.com/webpack-contrib/playable) — плеер с гибким API
 - [jQuery 3.6.0](https://code.jquery.com/jquery-3.6.0.min.js) — для простого DOM-управления
 - [Font Awesome 4.7.0](https://cdnjs.com/libraries/font-awesome) — иконки управления
+
+---
+
+## Ссылка на сайт
+
+[ГОСТФильм](https://tikhovskoy.github.io/video-player-jslib/) 
