@@ -65,33 +65,33 @@ function createPlayer({
     const $muteButton = $playerContainer.find('.js-mute-button');
 
     $volumeButton.click(() => {
-      player.setVolume(100);
+        player.setVolume(0);
     });
     $muteButton.click(() => {
-      player.setVolume(0);
+        player.setVolume(100);
     });
 
     function activateVolumeButton() {
-      $volumeButton.attr("hidden", false);
-      $muteButton.attr("hidden", true);
+        $volumeButton.attr("hidden", false);
+        $muteButton.attr("hidden", true);
     }
 
     function activateMuteBtn() {
-      $volumeButton.attr("hidden", true);
-      $muteButton.attr("hidden", false);
+        $volumeButton.attr("hidden", true);
+        $muteButton.attr("hidden", false);
     }
 
     function toggleVolumeMuteBtns() {
-      if (player.getVolume() > 0) {
-        activateMuteBtn();
-      } else {
-        activateVolumeButton();
-      }
+        if (player.getVolume() > 0) {
+            activateVolumeButton();
+        } else {
+            activateMuteBtn();
+        }
     }
 
     player.on(Playable.VIDEO_EVENTS.VOLUME_CHANGED, toggleVolumeMuteBtns);
     toggleVolumeMuteBtns();
-  })();
+})();
 
   const $fullscreenButton = $playerContainer.find('.js-fullscreen-button');
   $fullscreenButton.click(() => {
